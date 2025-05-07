@@ -1,10 +1,9 @@
-
 -- Criar banco de dados
 CREATE DATABASE IF NOT EXISTS ifac;
 USE ifac;
 
 -- Tabela alunos
-CREATE TABLE alunos (
+CREATE TABLE IF NOT EXISTS alunos (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
     email VARCHAR(100),
@@ -24,7 +23,7 @@ INSERT INTO alunos (nome, email, data_nascimento) VALUES
 ('Juliana Freitas', 'juliana@ifac.edu.br', '2005-09-01');
 
 -- Tabela professores
-CREATE TABLE professores (
+CREATE TABLE IF NOT EXISTS professores (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
     email VARCHAR(100),
@@ -44,7 +43,7 @@ INSERT INTO professores (nome, email, titulacao) VALUES
 ('Fábio Rezende', 'fabio@ifac.edu.br', 'Doutor');
 
 -- Tabela disciplinas
-CREATE TABLE disciplinas (
+CREATE TABLE IF NOT EXISTS disciplinas (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
     carga_horaria INT,
@@ -65,7 +64,7 @@ INSERT INTO disciplinas (nome, carga_horaria, id_professor) VALUES
 ('Artes', 30, 10);
 
 -- Tabela notas
-CREATE TABLE notas (
+CREATE TABLE IF NOT EXISTS notas (
     id INT PRIMARY KEY AUTO_INCREMENT,
     id_aluno INT,
     id_disciplina INT,
@@ -85,3 +84,42 @@ INSERT INTO notas (id_aluno, id_disciplina, nota) VALUES
 (8, 8, 6.4),
 (9, 9, 9.0),
 (10, 10, 7.8);
+
+
+-- Inserções adicionais de alunos
+INSERT INTO alunos (nome, email, data_nascimento) VALUES
+('Ana Paula', 'anapaula@ifac.edu.br', '2004-06-10'),
+('Ana Clara', 'anaclara@ifac.edu.br', '2006-04-02'),
+('Ana Júlia', 'anajulia@ifac.edu.br', '2005-02-22'),
+('Carlos Eduardo', 'cadu@ifac.edu.br', '2003-11-11'),
+('Bruna Souza', 'brunasouza@ifac.edu.br', '2004-12-15'),
+('João Silva', 'joaosilva@ifac.edu.br', '2005-09-09'),
+('Joana Santos', 'joana@ifac.edu.br', '2006-01-25'),
+('André Souza', 'andresouza@ifac.edu.br', '2004-10-01'),
+('Ana Beatriz', 'anabeatriz@ifac.edu.br', '2005-07-07'),
+('Beatriz Souza', 'beatriz@ifac.edu.br', '2005-03-30');
+
+-- Inserções adicionais de professores
+INSERT INTO professores (nome, email, titulacao) VALUES
+('Thiago Fonseca', 'thiago@ifac.edu.br', 'Especialista'),
+('Lívia Martins', 'livia@ifac.edu.br', 'Mestre'),
+('Bruno Andrade', 'brunoandrade@ifac.edu.br', 'Doutor');
+
+-- Inserções adicionais de disciplinas
+INSERT INTO disciplinas (nome, carga_horaria, id_professor) VALUES
+('Sociologia', 30, 11),
+('Filosofia', 30, 12),
+('Robótica', 60, 13);
+
+-- Inserções adicionais de notas
+INSERT INTO notas (id_aluno, id_disciplina, nota) VALUES
+(11, 1, 8.0),
+(12, 2, 7.4),
+(13, 3, 9.0),
+(14, 4, 6.5),
+(15, 5, 7.9),
+(16, 6, 5.8),
+(17, 7, 8.7),
+(18, 8, 6.2),
+(19, 9, 9.3),
+(20, 10, 7.5);
