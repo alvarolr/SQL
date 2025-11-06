@@ -19,8 +19,8 @@ INSERT INTO alunos (nome, email, data_nascimento) VALUES
 ('Fernanda Castro', 'fernanda@ifac.edu.br', '2005-12-03'),
 ('Gabriel Costa', 'gabriel@ifac.edu.br', '2004-08-09'),
 ('Helena Dias', 'helena@ifac.edu.br', '2003-10-17'),
-('Igor Martins', 'igor@ifac.edu.br', '2006-02-25'),
-('Juliana Freitas', 'juliana@ifac.edu.br', '2005-09-01');
+('Paulo Sócrates', 'socrates@ifac.edu.br', '2009-03-31'),
+('Anthony Guilheme', 'anthony@ifac.edu.br', '2009-04-25');
 
 -- Tabela professores
 CREATE TABLE IF NOT EXISTS professores (
