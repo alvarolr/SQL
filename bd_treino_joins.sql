@@ -45,7 +45,12 @@ INSERT INTO clientes (nome, email, cidade, telefone) VALUES
 ('Gustavo Pereira', NULL, 'Rio Branco', '6899991007'),
 ('Helena Ramos', 'helena@gmail.com', NULL, NULL),
 ('Igor Santos', 'igor@gmail.com', 'Xapuri', '6899991009'),
-('Joana Castro', NULL, 'Plácido de Castro', '6899991010');
+('Joana Castro', NULL, 'Plácido de Castro', '6899991010'),
+('Paulo Sócrates', 'socrates@gemail.com', 'Envira', '6840028922'),
+('Rasmus Lerdorf', 'lerdorf@gemail.com', 'Xapuri', '6845453535'),
+('Albert Einstein', 'einstein@gemail.com', 'Quinari', '6869696767'),
+('Cristiano Ronaldo', 'ppcris@gemail.com', 'Quinari', '6869696767'),
+('Stephen Hawking', 'stephen@gemail.com', 'Rio Branco', '6888775522');
 
 -- VENDAS
 INSERT INTO vendas (cliente_id, valor, data_venda, produto, status_pagamento) VALUES
@@ -58,7 +63,12 @@ INSERT INTO vendas (cliente_id, valor, data_venda, produto, status_pagamento) VA
 (10, 120.00, '2024-05-02', 'Fone de Ouvido', 'Pago'),
 (8, 80.00, NULL, 'Carregador', 'Pago'),
 (6, 60.00, '2024-05-13', NULL, 'Pago'),
-(4, 90.00, '2024-05-14', 'Mouse Pad', 'Aguardando');
+(4, 90.00, '2024-05-14', 'Mouse Pad', 'Aguardando'),
+(11, 270.00, '2024-05-23', 'Mouse', 'Pago'),
+(12, 350.00, '2024-05-12', 'Monitor', 'Pago'),
+(13, 20.00, '2024-05-13', 'Tablet', 'Cancelado'),
+(14, 80.00, '2024-05-05', 'Mouse Pad', 'Pago'),
+(15, 120.00, '2024-05-09', 'Teclado', 'Aguardando');
 
 -- PEDIDOS
 INSERT INTO pedidos (cliente_id, data_pedido, tipo_entrega, endereco_entrega, observacoes) VALUES
@@ -71,4 +81,9 @@ INSERT INTO pedidos (cliente_id, data_pedido, tipo_entrega, endereco_entrega, ob
 (10, '2024-05-05', 'Padrão', 'Rua F, 600', NULL),
 (4, '2024-05-06', NULL, 'Rua G, 700', 'Urgente'),
 (8, '2024-05-07', 'Entrega Rápida', NULL, 'Portão cinza'),
-(5, '2024-05-08', 'Padrão', 'Rua H, 800', NULL);
+(5, '2024-05-08', 'Padrão', 'Rua H, 800', NULL),
+(11, '2024-05-08', 'Padrão', 'Rua X, 300', NULL),
+(12, '2024-04-25', 'Entrega Agendada', 'Rua Y, 200', NULL),
+(13, '2024-05-10', 'Entrega Agendada', 'Rua X, 600', NULL),
+(14, '2024-03-22', 'Padrão', 'Rua Z, 700', NULL),
+(15, '2024-05-13', 'Entrega Rápida', 'Rua Z, 700', NULL);
