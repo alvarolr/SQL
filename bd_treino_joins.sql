@@ -81,6 +81,7 @@ INSERT INTO pedidos (cliente_id, data_pedido, tipo_entrega, endereco_entrega, ob
 (10, '2024-05-05', 'Padrão', 'Rua F, 600', NULL),
 (4, '2024-05-06', NULL, 'Rua G, 700', 'Urgente'),
 (8, '2024-05-07', 'Entrega Rápida', NULL, 'Portão cinza'),
+(5, '2024-05-08', 'Padrão', 'Rua H, 800', NULL),
 (11, '2024-05-08', 'Padrão', 'Rua X, 300', NULL),
 (12, '2024-04-25', 'Entrega Agendada', 'Rua Y, 200', NULL),
 (13, '2024-05-10', 'Entrega Agendada', 'Rua X, 600', NULL),
