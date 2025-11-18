@@ -45,7 +45,12 @@ INSERT INTO clientes (nome, email, cidade, telefone) VALUES
 ('Gustavo Pereira', NULL, 'Rio Branco', '6899991007'),
 ('Helena Ramos', 'helena@gmail.com', NULL, NULL),
 ('Igor Santos', 'igor@gmail.com', 'Xapuri', '6899991009'),
-('Joana Castro', NULL, 'Plácido de Castro', '6899991010');
+('Joana Castro', NULL, 'Plácido de Castro', '6899991010'),
+('Paulo Sócrates', 'socrates@gemail.com', 'Envira', '6840028922'),
+('Rasmus Lerdorf', 'lerdorf@gemail.com', 'Xapuri', '6845453535'),
+('Albert Einstein', 'einstein@gemail.com', 'Quinari', '6869696767'),
+('Cristiano Ronaldo', 'ppcris@gemail.com', 'Quinari', '6869696767'),
+('Stephen Hawking', 'stephen@gemail.com', 'Rio Branco', '6888775522');
 
 -- VENDAS
 INSERT INTO vendas (cliente_id, valor, data_venda, produto, status_pagamento) VALUES
