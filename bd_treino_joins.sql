@@ -63,7 +63,12 @@ INSERT INTO vendas (cliente_id, valor, data_venda, produto, status_pagamento) VA
 (10, 120.00, '2024-05-02', 'Fone de Ouvido', 'Pago'),
 (8, 80.00, NULL, 'Carregador', 'Pago'),
 (6, 60.00, '2024-05-13', NULL, 'Pago'),
-(4, 90.00, '2024-05-14', 'Mouse Pad', 'Aguardando');
+(4, 90.00, '2024-05-14', 'Mouse Pad', 'Aguardando'),
+(11, 270.00, '2024-05-23', 'Mouse', 'Pago'),
+(12, 350.00, '2024-05-12', 'Monitor', 'Pago'),
+(13, 20.00, '2024-05-13', 'Tablet', 'Cancelado'),
+(14, 80.00, '2024-05-05', 'Mouse Pad', 'Pago'),
+(15, 120.00, '2024-05-09', 'Teclado', 'Aguardando');
 
 -- PEDIDOS
 INSERT INTO pedidos (cliente_id, data_pedido, tipo_entrega, endereco_entrega, observacoes) VALUES
