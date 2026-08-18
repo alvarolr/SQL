@@ -20,7 +20,24 @@ INSERT INTO alunos (nome, email, data_nascimento) VALUES
 ('Gabriel Costa', 'gabriel@ifac.edu.br', '2004-08-09'),
 ('Helena Dias', 'helena@ifac.edu.br', '2003-10-17'),
 ('Igor Martins', 'igor@ifac.edu.br', '2006-02-25'),
-('Juliana Freitas', 'juliana@ifac.edu.br', '2005-09-01');
+('Juliana Freitas', 'juliana@ifac.edu.br', '2005-09-01'),
+('Ana Paula', 'anapaula@ifac.edu.br', '2004-06-10'),
+('Ana Clara', 'anaclara@ifac.edu.br', '2006-04-02'),
+('Ana Júlia', 'anajulia@ifac.edu.br', '2005-02-22'),
+('Carlos Eduardo', 'cadu@ifac.edu.br', '2003-11-11'),
+('Bruna Souza', 'brunasouza@ifac.edu.br', '2004-12-15'),
+('João Silva', 'joaosilva@ifac.edu.br', '2005-09-09'),
+('Joana Santos', 'joana@ifac.edu.br', '2006-01-25'),
+('André Souza', 'andresouza@ifac.edu.br', '2004-10-01'),
+('Ana Beatriz', 'anabeatriz@ifac.edu.br', '2005-07-07'),
+('Beatriz Souza', 'beatriz@ifac.edu.br', '2005-03-30'),
+('Anthony Guilherme', 'anthony@ifac.edu.br', '2009-04-25'),
+('Paulo Sócrates', 'socrates@ifac.edu.br', '2009-03-31'),
+('Alan Turing', 'alanturing@ifac.edu.br', '1912-06-23'),
+('Linus Torvalds', 'torvalds@ifac.edu.br', '1969-12-28'),
+('Steve Wozniak', 'wozniak@ifac.edu.br', '1950-08-11'),
+('Caio Marcos', 'caiomarcos@ifac.edu.br', '2009-07-06'),
+('Mário Luis', 'marioluis@ifac.edu.br', '2009-09-21');
 
 -- Tabela professores
 CREATE TABLE IF NOT EXISTS professores (
@@ -40,7 +57,11 @@ INSERT INTO professores (nome, email, titulacao) VALUES
 ('Renata Lima', 'renata@ifac.edu.br', 'Doutor'),
 ('Sérgio Oliveira', 'sergio@ifac.edu.br', 'Especialista'),
 ('Aline Matos', 'aline@ifac.edu.br', 'Mestre'),
-('Fábio Rezende', 'fabio@ifac.edu.br', 'Doutor');
+('Fábio Rezende', 'fabio@ifac.edu.br', 'Doutor'),
+('Thiago Fonseca', 'thiago@ifac.edu.br', 'Especialista'),
+('Lívia Martins', 'livia@ifac.edu.br', 'Mestre'),
+('Bruno Andrade', 'brunoandrade@ifac.edu.br', 'Doutor'),
+('Álvaro Rios', 'alvaro.rios@ifac.edu.br', 'Especialista');
 
 -- Tabela disciplinas
 CREATE TABLE IF NOT EXISTS disciplinas (
@@ -61,7 +82,11 @@ INSERT INTO disciplinas (nome, carga_horaria, id_professor) VALUES
 ('Química', 60, 7),
 ('Inglês', 40, 8),
 ('Educação Física', 30, 9),
-('Artes', 30, 10);
+('Artes', 30, 10),
+('Sociologia', 30, 11),
+('Filosofia', 30, 12),
+('Robótica', 60, 13),
+('Banco de Dados', 90, 14);
 
 -- Tabela notas
 CREATE TABLE IF NOT EXISTS notas (
@@ -83,41 +108,7 @@ INSERT INTO notas (id_aluno, id_disciplina, nota) VALUES
 (7, 7, 7.3),
 (8, 8, 6.4),
 (9, 9, 9.0),
-(10, 10, 7.8);
-
-
--- Inserções adicionais de alunos
-INSERT INTO alunos (nome, email, data_nascimento) VALUES
-('Ana Paula', 'anapaula@ifac.edu.br', '2004-06-10'),
-('Ana Clara', 'anaclara@ifac.edu.br', '2006-04-02'),
-('Ana Júlia', 'anajulia@ifac.edu.br', '2005-02-22'),
-('Carlos Eduardo', 'cadu@ifac.edu.br', '2003-11-11'),
-('Bruna Souza', 'brunasouza@ifac.edu.br', '2004-12-15'),
-('João Silva', 'joaosilva@ifac.edu.br', '2005-09-09'),
-('Joana Santos', 'joana@ifac.edu.br', '2006-01-25'),
-('André Souza', 'andresouza@ifac.edu.br', '2004-10-01'),
-('Ana Beatriz', 'anabeatriz@ifac.edu.br', '2005-07-07'),
-('Beatriz Souza', 'beatriz@ifac.edu.br', '2005-03-30'),
-('Anthony Guilherme', 'anthony@ifac.edu.br', '2009-04-25'),
-('Paulo Sócrates', 'socrates@ifac.edu.br', '2009-03-31'),
-('Alan Turing', 'alanturing@ifac.edu.br', '1912-06-23'),
-('Linus Torvalds', 'torvalds@ifac.edu.br', '1969-12-28'),
-('Steve Wozniak', 'wozniak@ifac.edu.br', '1950-08-11');
-
--- Inserções adicionais de professores
-INSERT INTO professores (nome, email, titulacao) VALUES
-('Thiago Fonseca', 'thiago@ifac.edu.br', 'Especialista'),
-('Lívia Martins', 'livia@ifac.edu.br', 'Mestre'),
-('Bruno Andrade', 'brunoandrade@ifac.edu.br', 'Doutor');
-
--- Inserções adicionais de disciplinas
-INSERT INTO disciplinas (nome, carga_horaria, id_professor) VALUES
-('Sociologia', 30, 11),
-('Filosofia', 30, 12),
-('Robótica', 60, 13);
-
--- Inserções adicionais de notas
-INSERT INTO notas (id_aluno, id_disciplina, nota) VALUES
+(10, 10, 7.8),
 (11, 1, 8.0),
 (12, 2, 7.4),
 (13, 3, 9.0),
@@ -127,4 +118,6 @@ INSERT INTO notas (id_aluno, id_disciplina, nota) VALUES
 (17, 7, 8.7),
 (18, 8, 6.2),
 (19, 9, 9.3),
-(20, 10, 7.5);
+(20, 10, 7.5),
+(26, 14, 10.0),
+(27, 14, 9.5);
