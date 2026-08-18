@@ -102,7 +102,8 @@ INSERT INTO alunos (nome, email, data_nascimento) VALUES
 ('Paulo Sócrates', 'socrates@ifac.edu.br', '2009-03-31'),
 ('Alan Turing', 'alanturing@ifac.edu.br', '1912-06-23'),
 ('Linus Torvalds', 'torvalds@ifac.edu.br', '1969-12-28'),
-('Steve Wozniak', 'wozniak@ifac.edu.br', '1950-08-11');
+('Steve Wozniak', 'wozniak@ifac.edu.br', '1950-08-11'),
+('Mário Luis', 'mariolstt@ifac.edu.br', '2009-04-04');
 
 -- Inserções adicionais de professores
 INSERT INTO professores (nome, email, titulacao) VALUES
